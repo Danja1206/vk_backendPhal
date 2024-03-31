@@ -1,4 +1,5 @@
 <?php
+/*
 use \RedBeanPHP\R as R;
 
 R::setup("mysql:host={$_ENV['DB_HOST']};dbname={$_ENV['DB_DATABASE']}", "{$_ENV['DB_USERNAME']}", "{$_ENV['DB_PASSWORD']}");
@@ -15,3 +16,4 @@ if ($tableExists == 0) {
         `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )");
 }
+*/

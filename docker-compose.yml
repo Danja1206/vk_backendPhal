@@ -1,0 +1,14 @@
+version: "3"
+services:
+  php:
+    build: .
+    ports:
+      - "8000:8000"
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
